@@ -1,0 +1,10 @@
+#example plugin
+[Url Rewrite]
+^https?://(www.)?baidu.com REJECT
+
+[Script]
+cron "1 10 * * *" tag=Corn脚本测试, script-path=https://raw.githubusercontent.com/alinuxsa/script-demo/main/exam.js
+
+
+[MITM]
+hostname = ios.prod.ftl.netflix.com
